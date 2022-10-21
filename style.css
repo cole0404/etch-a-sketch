@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: skyblue;
+}
+
+.squares {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    background-color: white;
+    margin-bottom: -7px;
+}
+
+.color {
+    background-color: black;
+}
+
+.newSketch {
+    padding: 4px;
+    margin: 16px;
+}
