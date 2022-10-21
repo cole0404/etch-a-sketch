@@ -12,12 +12,19 @@ body {
     background-color: skyblue;
 }
 
+.container {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .squares {
-    height: 32px;
-    width: 32px;
     display: inline-block;
     background-color: white;
-    margin-bottom: -7px;
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    flex-basis: 1%;
 }
 
 .color {

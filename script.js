@@ -1,7 +1,7 @@
 const container = document.querySelector('.container');
 const newSketch = document.querySelector('.newSketch');
 
-
+newSketch.addEventListener('click', makeNewGrid);
 
 function createGrid(num) {
     let product = num * num;
@@ -26,10 +26,19 @@ function changeColor(event) {
 }
 
 function makeNewGrid() {
+    let value = prompt(`Insert a number for squares per side, 1 - 100`);
 
+    if (value > 100 || value <= 0) alert(`That number is not between 1 and 100!`);
+
+    else if (value <= 100) {
+        alert(`working`);
+    }
+
+    else alert(`Please enter a number!`);
 }
 
-createGrid(16)
+
+createGrid(100)
 
 //create button that triggers function that prompts user for a number less than 100, then use input at num variable. 
 //grid must stay same size no matter what number is inputted
