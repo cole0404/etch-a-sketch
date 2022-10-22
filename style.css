@@ -13,18 +13,17 @@ body {
 }
 
 .container {
-    height: 500px;
-    width: 500px;
+    height: 700px;
+    width: 700px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.squares {
-    display: inline-block;
+.xsquares {
     background-color: white;
+    display: flex;
     flex: 1;
-    aspect-ratio: 1 / 1;
-    flex-basis: 1%;
+    flex-direction: column;
 }
 
 .color {
